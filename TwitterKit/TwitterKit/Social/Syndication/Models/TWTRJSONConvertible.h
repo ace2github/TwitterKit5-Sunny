@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable instancetype)initWithJSONDictionary:(NSDictionary *)dictionary;
 
+@optional
+- (instancetype)initWithJSONDictionary_v2:(NSDictionary *)dictionary;
 @end
 
 NS_ASSUME_NONNULL_END
