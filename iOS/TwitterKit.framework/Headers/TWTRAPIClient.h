@@ -205,7 +205,7 @@ typedef void (^TWTRRequestEmailCompletion)(NSString *_Nullable email, NSError *_
 - (void)uploadMedia:(NSData *)media contentType:(NSString *)contentType completion:(TWTRMediaUploadResponseCompletion)completion;
 
 /**
- *  Create and send a Tweet.
+ *  Create and send a Tweet. v2
  *
  *  @param tweetText    (required) The text for a Tweet
  *  @param completion   Completion block to be called on response. Called on main queue.
@@ -213,7 +213,7 @@ typedef void (^TWTRRequestEmailCompletion)(NSString *_Nullable email, NSError *_
 - (void)sendTweetWithText:(NSString *)tweetText completion:(TWTRSendTweetCompletion)completion;
 
 /**
- *  Upload media and create a Tweet. Returns TWTRTweet to be used when debugging.
+ *  Upload media and create a Tweet. Returns TWTRTweet to be used when debugging. v2
  *
  *  @param tweetText   The text for a Tweet
  *  @param image       UIImage to upload
@@ -222,7 +222,7 @@ typedef void (^TWTRRequestEmailCompletion)(NSString *_Nullable email, NSError *_
 - (void)sendTweetWithText:(NSString *)tweetText image:(UIImage *)image completion:(TWTRSendTweetCompletion)completion;
 
 /**
- *  Create a Tweet with a video. Returns TWTRTweet to be used when debugging.
+ *  Create a Tweet with a video. Returns TWTRTweet to be used when debugging. v2
  *
  *  Note: there are several requirements of the video being uploaded:
  *  - Duration should be between 0.5 seconds and 30 seconds
